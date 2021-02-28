@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: arial, sans-serif;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* NAGŁÓWEK */
+
+main.main {
+    background-color: black;
+    height: 30vh;
+}
+
+main.main div.bgc {
+    background-image: url(img/main.jpg);
+    background-position: center bottom;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+}
+
+main.main div.bgc h1 {
+    width: 100%;
+    display: block;
+    color: white;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 2px 2px #000;
+    position: absolute;
+    bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-repeat: no-repeat;
+    padding: 10px 0;
+}
+
+@media(min-width: 540px) {
+    main.main {
+        height: 70vh;
+    }
+
+    main.main div.bgc {
+        background-attachment: fixed;
+        background-position: 60%;
+    }
+
+    main.main div.bgc h1 {
+        font-size: 3rem;
+        bottom: 50px;
+    }
+}
+
+@media(min-width: 1024px) {
+    main.main div.bgc h1 {
+        font-size: 4.5rem;
+        bottom: 70px;
+    }
+}
+
+
+/*WSTĘP */
+
+
+section div h2.wstep {
+    font-size: 1.7rem;
+    text-shadow: 2px 2px #000;
+    width: 80%;
+    margin: 20px auto;
+    border: 20px #444 none;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 20px;
+    background-color: #444;
+    color: white;
+    padding: 8px 0;
+}
+
+section div h3.budowa {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 15px;;
+}
+
+section div div.rubik1 div img {
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+}
+
+section div div.rubik1 div h3 {
+    text-align: center;
+    padding: 8px 0;
+    font-size: 1.4rem;
+}
+
+@media(min-width: 360px) {
+    section div h2.wstep {
+        border: 25px #444 none;
+        border-radius: 25px;
+        font-size: 2.2rem;
+    }
+
+    section div h3.budowa {
+        font-size: 1.7rem;
+    }
+
+    section div div.rubik1 div h3 {
+        font-size: 1.5rem;
+    }
+
+    section div div.rubik1 div img {
+        width: 35%;
+    }
+}
+
+@media(min-width: 768px) {
+    section div h2.wstep {
+        font-size: 4rem;
+        padding: 25px 0;
+    }
+
+    section div h3.budowa {
+        font-size: 3rem;
+        padding: 15px 20px 15px;
+    }
+
+    section div div.rubik1 div {
+        width: 33%;
+        float: left;
+    }
+
+    section div div.rubik1 div h3 {
+        font-size: 3.8rem;
+    }
+
+    section div div.rubik1 div img {
+        width: 60%;
+    }
+}
+@media(min-width: 1024px)
+{
+    section div h3.budowa {
+        font-size: 1.7rem;
+        padding: 15px 35px 30px;
+    }
+    section div div.rubik1 div h3 {
+        font-size: 2.5rem;
+    }
+}
+
+@media(min-width: 568px) and (orientation: landscape)
+{
+    section div div.rubik1 div {
+        width: 33%;
+        float: left;
+    }
+}
+    
+    
+/* NOTACJE I ALGORYTMY */
+
+
+section div div div.notacja2 h1.ruch {
+    position: relative;
+    bottom: -20px;
+    height: 16%;
+    font-size: 4rem;
+    width: 25%;
+    display: inline;
+    float: left;
+    text-align: center;
+}
+
+section div div div.notacja2 img {
+    display: inline;
+    width: 25%;
+    float: left;
+}
+
+@media(min-width: 540px) {
+    section div div div.notacja2 h1.ruch{
+      font-size: 6rem;
+        bottom: -25px;
+    }
+    section div div div.notacja2 img {
+    padding: 5px 10px;
+    }
+}
+
+@media(min-width: 768px){
+    section div div div.notacja2 h1.ruch{
+      font-size: 8rem;
+        bottom: -40px;
+    }
+}
+
+@media(min-width: 1024px){
+    section div div div.notacja2 img{
+        width: 12.5%;
+        padding: 6px 25px;
+    }
+    section div div div.notacja2 h1.ruch{
+        width: 12.5%;
+    }
+    section div div div.notacja2 h1.ruch{
+      font-size: 5rem;
+    bottom: -15px;
+    }
+}
+@media(min-width: 1500px)
+{
+    section div div div.notacja2 h1.ruch{
+        bottom: -80px;
+    }
+}
+@media(min-width: 568px) and (orientation: landscape) and (max-width: 639px){
+    section div div div.notacja2 img{
+        width: 12.5%;
+    }
+    section div div div.notacja2 h1.ruch{
+        width: 12.5%;
+    }
+    section div div div.notacja2 h1.ruch{
+        font-size: 3rem;
+        bottom: -14px;
+    }
+}
+@media(min-width: 640px) and (orientation: landscape) and (max-width: 1023px){
+    section div div div.notacja2 img{
+        width: 12.5%;
+    }
+    section div div div.notacja2 h1.ruch{
+        width: 12.5%;
+    }
+    section div div div.notacja2 h1.ruch{
+        font-size: 3rem;
+        bottom: -20px;
+    }
+}
+@media(min-width: 640px) and (orientation: landscape) and (max-height: 1024px){
+    section div div div.notacja2 img{
+        width: 12.5%;
+    }
+    section div div div.notacja2 h1.ruch{
+        width: 12.5%;
+    }
+    section div div div.notacja2 h1.ruch{
+        font-size: 5rem;
+        bottom: -20qpx;
+    }
+    section div h3.budowa {
+        font-size: 2.3rem;
+        padding: 15px 35px 30px;
+    }
+}
+
+
+/* BIAŁY KRZYŻ ETAP 1/7 */
+
+
+section div div.rubik3 div{
+    float: left;
+    width: 50%;
+    display: block;
+}
+section div div.rubik3 div img{
+    position: relative;
+    display: block;
+    float: left;
+    width: 50%;
+    margin: 0 auto;
+    left: 25%;
+    right: 25%;
+    padding: 5px 0;
+}
+section div div.rubik3 div h3{
+    text-align: center;
+    font-size: 1.2rem;
+    float: left;
+    width: 100%;
+    padding: 7px 0;
+}
+section div div.rubik33 img{
+    width: 25%;
+    position: relative;
+    left: 37.5%;
+    right: 62.5%;
+}
+@media(min-width: 360px)
+{
+    section div div.rubik3 div h3{
+        font-size: 1.4rem;
+    }
+}
+@media(min-width: 540px)
+{
+    section div div.rubik3 div h3{
+        font-size: 1.7rem;
+    }
+}
+@media(min-width: 768px)
+{
+    section div div.rubik3 div h3{
+        font-size: 2.4rem;
+    }
+}
+@media(min-width: 1300px)
+{
+    section div div.rubik3 div h3{
+        font-size: 2.6rem;
+    }
+}
+/* PIERWSZA WARSTWA ETAP 2/7*/
+
+section div div.rubik4 img{
+    width: 25%;
+    position: relative;
+    left: 37.5%;
+    right: 62.5%;
+}
+
+/* DRUGA WARSTWA ETAP 3/7*/
+
+section div div.rubik5 div{
+    width: 50%;
+    float: left;
+}
+section div div.rubik5 div img{
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+section div div.rubik55 img{
+    width: 25%;
+    position: relative;
+    left: 37.5%;
+    right: 62.5%;
+}
