@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Jak ułożyć kostkę rubika</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="main">
+        <div class="bgc">
+            <h1>Naucz sie układać kostkę rubika</h1>
+        </div>
+    </main>
+</body>
+<section>
+    <div>
+        <h2 class="wstep">Wstęp</h2>
+        <h3 class="budowa">Na początek zapoznajmy się z budową kostki. Kostka składa się z:</h3>
+        <div class="rubik1 clearfix">
+            <div class="center">
+                <h3>centrów</h3>
+                <img src="img/wstep/centry.png" alt="centry">
+            </div>
+            <div class="krawedz">
+                <h3>krawedzi</h3>
+                <img src="img/wstep/krawedzie.png" alt="krawedzie">
+            </div>
+            <div class="naroznik">
+                <h3>narozników</h3>
+                <img src="img/wstep/narozniki.png" alt="narozniki">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div>
+        <h2 class=wstep>Algorytmy i notacje</h2>
+        <h3 class="budowa">Notacja to zapis pojedyńczego ruchu jedną literą. Upraszcza zapis algorytmów</h3>
+        <h3 class="budowa">Algorytm to sekwencja ruchów pozwalający uzykać dany efekt</h3>
+        <h3 class="budowa">Dla lepszego zapamiętania dobrze jest przerysować poniższe ryskunki wraz z notacją</h3>
+        <h3 class="budowa">Dodanie do znaku ' oznacza ruch przeciwny</h3>
+        <h3 class="budowa">Warto zwrócić uwagę, iż często pojawiają się błędy z powodu wykonania jednego błędnego ruchu w algorytmie lub obracania kostki (czyli zmienianie koloru centra względem siebie) podczas algorytmu!!!</h3>
+        <div>
+            <div class="notacja2 clearfix">
+                <img src="img/notacje/R.png" alt="R">
+                <h1 class="ruch">- R </h1>
+
+                <h1 class="ruch">R' -</h1>
+                <img src="img/notacje/R'.png" alt="R'">
+
+                <img src="img/notacje/L.png" alt="L">
+                <h1 class="ruch">- L</h1>
+
+                <h1 class="ruch">L' -</h1>
+                <img src="img/notacje/L'.png" alt="L'">
+
+                <img src="img/notacje/U.png" alt="U">
+                <h1 class="ruch">- U</h1>
+
+                <h1 class="ruch">U' -</h1>
+                <img src="img/notacje/U'.png" alt="U'">
+
+                <img src="img/notacje/F.png" alt="F">
+                <h1 class="ruch">- F</h1>
+
+                <h1 class="ruch">F' -</h1>
+                <img src="img/notacje/F'.png" alt="F'">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div>
+        <h2 class="wstep">Biały krzyż Etap 1/7</h2>
+        <h3 class="budowa">Celem pierwszego etapu jest ułożenie POPRAWNEGO białego krzyża</h3>
+        <div class="rubik3 clearfix">
+            <div class="clearfix">
+                <h3>POPRAWNY biały krzyż</h3>
+                <img src="img/BialyKrzyz/PoprawnyKrzyz.png" alt="Poprawny biały krzyż">
+            </div>
+            <div class="clearfix">
+                <h3>NIEPOPRAWNY biały krzyż</h3>
+                <img src="img/BialyKrzyz/NiePoprawnyKrzyz.png" alt="Niepoprawny biały krzyż">
+            </div>
+        </div>
+        <h3 class="budowa">Jest to jedyny etap, który trzeba wykonać samemu. Często pojawia się problem, gdzie krawędz jest w dobrym miejscu ale źle odwrócona, czyli:</h3>
+        <div class="rubik33">
+            <img src="img/BialyKrzyz/OdwroconaKrawedz.png" alt="Odwrocona krawędź">
+        </div>
+        <h3 class="budowa">Trzymając kostkę ZIELONYM CENTREM do siebie, wystarczy wykonać ruchy R' U F' U'</h3>
+        <h3 class="budowa">Warto zwrócić uwagę, iż nie zawsze algorytm ten będzie wykonywany zielonym centrem do siebie. Zależy to od sytuacji na kostce</h3>
+    </div>
+</section>
+
+<section>
+    <div>
+        <h2 class="wstep">Pierwsza warstwa Etap 2/7</h2>
+        <h3 class="budowa">Obracamy kostkę tak aby biały krzyż był na dole, a żółty center do góry</h3>
+        <div class="rubik4 clearfix">
+            <img src="img/etap2/obrot.png" alt="obrót">
+        </div>
+        <h3 class="budowa">Szukamy na górnej warstwie narożnika z kolorem białym. Dla przykładu, może to być narożnik o kolorach: biały, niebieski, pomarańczowy. Ustawiamy narożnik "pomiędzy" dwa centry o kolorach narożnika</h3>
+        <div class="rubik4 clearfix">
+            <img src="img/etap2/NaroznikGora.png" alt="obrót">
+        </div>
+        <h3 class="budowa">Mając przed sobą pomarańczowy center, wykonujemy algorytm: R U R' U'. Algorytm trzeba powtarzać, aż narożnik ustawi się poprawnie (białym do dołu).</h3>
+        <h3 class="budowa">Robimy tak z 3 następnymi narożnikami, aż nie będziemy mieć całej pierwszej warstwy, czyli poprawnie ustawionych 4 narożników i krawędzi</h3>
+        <h3 class="budowa">Problem może nastąpić, gdy narożnik jest na dolnej warstwie, ale jest to złe miejsce dla tego narożnika: </h3>
+        <div class="rubik4 clearfix">
+            <img src="img/etap2/zlemiejsce.png" alt="zle miejsce">
+        </div>
+        <h3 class="budowa">W takim wypadku, należy taki narożnik "wyciągnąć" na górną warstwe "wstawiając" w miejsce złego narożnika inny narożnik. W praktyce wystarczy wykonać wcześniej wspomniany algorytm R U R' U'</h3>
+        <h3 class="budowa">Kostka po zakończeniu etapu powinna wyglądać tak: </h3>
+        <div class="rubik4 clearfix">
+            <img src="img/etap2/etap2.png" alt="etap 2">
+        </div>
+    </div>
+</section>
+
+<section>
+    <div>
+        <h2 class="wstep">Druga warstwa Etap 3/7</h2>
+        <h3 class="budowa">Szukamy na górnej warstwie krawędzi, która NIE MA żółtego koloru. Następnie wykonując ruchy U lub U' dopasowywujemy "dolny" kolor krawędzi do centra:</h3>
+        <div class="rubik5 clearfix">
+            <div>
+                <img src="img/etap3/NaLewo.png" alt="NaLewo">
+            </div>
+            <div>
+                <img src="img/etap3/NaPrawo.png" alt="NaPrawo">
+            </div>
+        </div>
+        <h3 class="budowa">Powyzej mamy dwa możliwe przypadki. Dla pierwszego po lewej wykonujemy algorytm POMARAŃCZOWYM centrem do siebie: U' L' U L F' U' F</h3>
+        <h3 class="budowa">Dla drugiego przypadku wykonujemy algorytm ZIELONYM centrem do siebie: U R U' R' U' F U F'</h3>
+        <h3 class="budowa">Są to tzw. algorytmy "na prawo" i "na lewo"</h3>
+        <div class="rubik55 clearfix">
+            <img src="img/etap3/zlaKrawedz.png" alt="etap 2">
+        </div>
+        <h3 class="budowa">W takim wypadku należy "wyciągnąć" krawędź wykonując dowolny z algorytmów poznanych w tym etapie. Na miejsce zielono-pomarańczowej krawędzi wejdzie inna, co sprawi iż, będzie możliwe dopasowanie koloru krawędzi do centra i "wstawienie" jej poprawnie</h3>
+        <h3 class="budowa">po włożeniu wszystki krawędzi do drugiej warstwy kostka powinna wyglądać tak:</h3>
+        <div class="rubik55 clearfix">
+            <img src="img/etap3/ulozona.png" alt="etap 2">
+        </div>
+    </div>
+</section>
+
+<section>
+    <div>
+        <h2 class="wstep">Żółty krzyż Etap 4/7</h2>
+        <h3 class="budowa">Gdy dwie warstwy są ułożone, możliwe mamy 4 przypadki</h3>
+        <h3 class="budowa">Pierwszy przypadek: na górnej ściance krzyż nie ma żadnej krawędzi "odwróconej" kolorem żółtym w stronę centra. Wszystkie są ułożone odwrotnie. Mając przed sobą dowolny kolor centra (niebieski, zielony, pomarańczowy, czerwony) wykonujemy algorytm: F R U R' U' F'</h3>
+        <div class="rubik55">
+            <img src="img/etap4/zolty1.png" alt="żółtka kropka">
+        </div>
+        <h3 class="budowa">Drugi przypadek: Kostka powinna mieć już dwie krawędzie "obok siebie" ułożone:</h3>
+        <div class="rubik55">
+            <img src="img/etap4/L.png" alt="żółta L">
+        </div>
+        <h3 class="budowa">W tym wypadku znowu wykonujemy algorytm wykonywany wcześniej: F R U R' U' F', lecz teraz w przypadku pokazanym wyżej, algorytm musi być koniecznie wykonywany niebieskim centrem do siebie!</h3>
+        <h3 class="budowa">Trzeci przypadek: znowu mamy dwie krawędzie poprawnie ułożonem, lecz teraz są ona naprzeciw siebie</h3>
+        <div class="rubik55">
+            <img src="img/etap4/i.png" alt="żołta i">
+        </div>
+        <h3 class="budowa">Teraz znowu wykonujemy algorytm F R U R' U' F' mając do siebie center niebieski lub zielony (zielony center znajduje się naprzeciwko niebieskiego, niewidoczny na powyższej grafice)</h3>
+        <h3 class="budowa">Czwarty przypadek: ostatnie możliwe ustawienie kostki po 3 etapie jest już ułożony żółty krzyż, nie trzeba wykonywać żadnego algorytmu tylko przejść do następnego etapu</h3>
+        <div class="rubik55">
+            <img src="img/etap4/krzyz.png" alt="żołty krzyż">
+        </div>
+    </div>
+</section>
+
+<section>
+    <div>
+        <h2 class="wstep">Poprawny żółty krzyż Etap 5/7</h2>
+        <h3 class="budowa">Celem tego etapu jest ułożenie POPRAWNEGO żółtego krzyża. Poprawny krzyż znaczy dokładnie to samo co w etapie 1/7. Tym razem musimy zrobić poprawny żółty krzyż nie niszcząc ułożonych dwóch warstw.</h3>
+        <h3 class="budowa">Trzymając kostkę dowolonym centrem do siebie (niebieskim, zielonym, czerwonym lub pomarańczowym) możemy wykonywać dowolną liczbę ruchów U i U' i dopasować przynajmniej jedną krawędz do centra. Jeżeli niemożliwe jest dopasowanie wszystkich krawędzi jednocześnie do centrów, musimy pozamieniać miejscami takowe krawędzie.</h3>
+        <div class="rubik55">
+            <img src="img/etap5/prosty.png" alt="Prosty przypadek">
+        </div>
+        <h3 class="budowa">Gdy dwie krawędzie (żółto-pomarańczowa i żółto-zielona niewidoczne na zdjęciu) są ułożone poprawnie a krawędz czerwoną i niebieską musimy zamienić miejsca, "nieniszcząc" już dwóch poprawnie ułożonych krawędzi wykonujemy algorytm: R U R' U R U U R' U</h3>
+        <h3 class="budowa">W tym przypadku (grafika wyżej) algorytm wykonujemy CZERWONYM centrem do siebie. Można powiedzieć wtedy, że zamieniamy "przednią" krawędź z tą po "lewej"</h3>
+        <h3 class="budowa">Czasem niemożliwe jest wykonanie algorytmu i dopasowanie jedym algorytmem dwóch krawędzi jednocześnie dla przykładu:</h3>
+        <div class="rubik55">
+            <img src="img/etap5/pojedynczy.png" alt="przypadek ułożenia jednej krawędzi">
+        </div>
+        <h3 class="budowa">W powyższym przypadku wykonująć algorytm: R U R' U R U U R' U (oczywiście CZERWONYM centrem do siebie) ustawimy czerwone w poprawne miejsce, lecz zielony bedzie dalej w złym miejscu. Algorytm można wykonywać dowolną ilość razy, w różnych miejscach, dopóki cały żółty krzyż nie będzie POPRAWNIE ułożony</h3>
+        <h3 class="budowa">Na początku wymaga to trochę czasu w bardziej skomplikowanych przypadkach.</h3>
+        <h3 class="budowa">Ostatecznie kostka powinna na koniec etapu wyglądać tak:</h3>
+        <div class="rubik55">
+            <img src="img/etap5/podstawa.png" alt="Ułożony żółty krzyż">
+        </div>
+    </div>
+</section>
+
+<section>
+    <div>
+        <h2 class="wstep">Ustawianie narożników Etap 6/7</h2>
+        <h3 class="budowa">W tym etapie do ułożonej kostki brakuje nam ułożonym 4 (lub mniej, zależy do szczęścia) narożników. Na tym etapie będziemy jest tylko "wsadzać" na poprawne miejsca, nie wszystkie będą poprawnie obrócone. Sytuacje przedstawiam na grafice:</h3>
+        <div class="rubik55">
+            <img src="img/etap6/Z%C5%82yNaroznik.png" alt="ZlyNaroznik">
+        </div>
+        <h3 class="budowa">Powyżej widzimy narożnik na złym miejscu, ponieważ narożnik znajduje się "pomiędzy" centrami o kolorach: żółty, czerwony, niebieski, a narożnik jest o kolorach: żółto-zielono-pomarańczowy</h3>
+        <div class="rubik55">
+            <img src="img/etap6/DobryNaroznik.png" alt="DobryNaroznik">
+        </div>
+        <h3 class="budowa">Powyżej widzimy narożnik na na dobrym miejscu. Znajduje się pomiędzy centrami o kolorach: żółty, czerwony, niebieski, a narożnik jest o kolorach: żółto-niebiesko-czerwony. Jest po prostu źle obrócony, ale znajduje się na poprawnym miejscu.</h3>
+        <div class="rubik55">
+            <img src="img/etap6/gg.png" alt="gg">
+        </div>
+        <h3 class="budowa">Powyżej widzimy narożnik na dobrym miesjscu, dodatkowo dobrze obrócony.</h3>
+        <h3 class="budowa">Etap polega na ustawieniu każdego narożnika na poprawnym miejscu. Obracaniem narożników zajmiemy się w następnym etapie</h3>
+        <h3 class="budowa">Zabawa polega na tym samym co w poprzednim etapie. Mamy algorytm który wykonywany z czerwonym centrem przed sobą zamienia 3 krawędzie zgodnie z grafiką:</h3>
+        <div class="rubik55">
+            <img src="img/etap6/kostka9.png" alt="gg">
+        </div>
+       <h3 class="budowa">Algorytm: U R U' L' U R' U' L</h3> 
+        <h3 class="budowa">Algorytm często będzie trzeba powtarzać, z różnych stron dopóki każdy narożnik nie będzie na swoim miejscu</h3>
+    </div>
+</section>
+
+<section>
+    <div>
+        <h2 class="wstep">Obracanie narożników Etap 7/7</h2>
+        <h3 class="budowa">Obracamy kostkę żółtym krzyżem do dołu:</h3>
+        <div class="rubik55">
+            <img src="img/etap7/pierwszy.png" alt="gg">
+        </div>
+        <h3 class="budowa">Teraz szukamy narożnika, który jest źle obrócony, może to wyglądać tak:</h3>
+        <div class="rubik55">
+            <img src="img/etap7/zlyObrot.png" alt="gg">
+        </div>
+        <h3 class="budowa">Teraz wykonujemy algorytm R U R' U' tyle razy, aż ten narożnik "nie wejdzie" poprawnie czyli żółtym do dołu (zielonym centrem do siebie)</h3>
+        <h3 class="budowa">Algorytm ten wykonuje się zazwyczaj 2 albo 4 razy. Kostka wydaje się pomieszana, nie przejmuj się tym</h3>
+        <h3 class="budowa">Teraz cały czas mając przed sobą ten sam center (w tym przypadku zielony) obracamy TYLKO dolną ścianką aby narożnik który jest źle obrócony znowu znalazł się względem centra w "prawym dolnym rogu". Po "włożeniu" poprawnie narożnika kostka wyglądać może tak:</h3>
+        <div class="rubik55">
+            <img src="img/etap7/drugie.png" alt="gg">
+        </div>
+        <h3 class="budowa">Potem obracamy dolną sianką aby ustawić źle obrócony narożnik w prawym dolnym rogu względem zielonego centra</h3>
+        <div class="rubik55">
+            <img src="img/etap7/obrot.png" alt="gg">
+        </div>
+        <h3 class="budowa">znowu wykonujemy algorytm R U R' U' aż dolny narożnik nie włoży się poprawnie, czyli żółtym do dołu</h3>
+        <h3 class="budowa">po ułożeniu każdego narożnika poprawnie kostka powinna zostać cała ułożona</h3>
+        <h3 class="budowa">Należy pamiętam aby przy wykonywaniu algorytmu R U R' U' nie zapominac o ostatnim ruchu, jest on bardzo ważny aby nie pomieszać kostki podczas układania</h3>
+        <h2 class="wstep">GRATULACJE</h3>
+    </div>
+</section>
+
+</html>
